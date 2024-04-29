@@ -1,6 +1,9 @@
 import React from 'react'
 import type { Metadata } from "next";
 import { TechStack } from '~/constant/TechStack';
+import { AnimatePresence, motion } from 'framer-motion';
+import { image } from '~/constant/Image';
+import SliceShow from '~/component/Slideshow';
 
 export const metadata: Metadata = {
   title: "Work",
@@ -89,6 +92,9 @@ const Work = () => {
           <li>Iris Consulting: Provide API service that used GraphQL and MongoDB</li>
           <li>Hubba Connect: Implemented UI following design by used ReactJS and connected GraphQl API</li>
         </ul>
+
+        {/* <SliceShow src={src}/> */}
+        {/* {[...Object.values(image.feature.nodeFrame)].map((src) => <SliceShow src={src}/>)} */}
 
         <div className='flex gap-1'>
           {TechStack.filter(item => nodeFrameTech.includes(item.alt)).map(techItem => 

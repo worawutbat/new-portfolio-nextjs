@@ -22,7 +22,11 @@ const blogs = [
   href: "https://medium.com/@woravootbat/kubernetes-%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3-%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3%E0%B8%81%E0%B8%B1%E0%B8%9A-docker-%E0%B8%9B%E0%B9%88%E0%B8%B0-4c9d5fddb182",
   title: "📖 Kubernetes คืออะไร? แล้วเกี่ยวอะไรกับ Docker ป่ะ 🧐",
   // comments: "0 👏 0 💬"
-}]
+},{
+  href: "",
+  title: "✍️ Up comming..."
+  // comments: "0 👏 0 💬"
+},]
 
 const Blog = () => {
   return (
