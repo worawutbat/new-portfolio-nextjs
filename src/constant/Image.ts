@@ -11,20 +11,20 @@ export const image = {
             home: '/feature/fictionlog-home.png',
             filter_search: '/feature/fictionlog-filter-search.png',
             search: '/feature/fictionlog-search.png',
-            shopdee_1: '/feature/fictionlog-shopdee-1.png',
+            // shopdee_1: '/feature/fictionlog-shopdee-1.png',
             shopdee_2: '/feature/fictionlog-shopdee-2.png',
            
         },
         pinto: {
             home: '/feature/pinto-home.png',
-            price_setting_1: '/feature/pinto-price-setting-1.png',
+            // price_setting_1: '/feature/pinto-price-setting-1.png',
             price_setting_2: '/feature/pinto-price-setting-2.png',
             redeem: '/feature/pinto-redeem.png',
             
         },
         venuee: {
-            campaign: 'venuee-campaign.jpg',
-            home: 'venuee-home.jpg'
+            campaign: '/feature/venuee-campaign.jpg',
+            home: '/feature/venuee-home.jpg'
         }
     },
     // logo: {

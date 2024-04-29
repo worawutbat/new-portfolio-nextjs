@@ -8,6 +8,7 @@ const OverViewImage = [
   image.feature.fictionlog.filter_search,
   image.feature.pinto.home,
   image.feature.pinto.price_setting_2,
+  image.feature.venuee.home,
   image.feature.nodeFrame.hubba_1,
   image.feature.nodeFrame.hubba_3,
 ];
@@ -28,7 +29,7 @@ export default function Home() {
         <h1 class="mt-2 mb-8 text-2xl font-medium tracking-tighter">Hi, I am Worawut 👋</h1>
       </div>
       <p class="prose prose-neutral dark:prose-invert">
-        I'm a frontend developer. I currently
+        I am Frontend Software Engineer. I currently
         <a href="/work"> work</a> as the Front end software engineer of Product at{' '}
         <span class="not-prose">
           <a
@@ -165,6 +166,7 @@ export default function Home() {
         </div>
       </div>
 
+      <h3 className="font-medium text-lg">My work (Overview):</h3>
       <div className="space-y-3">
         {OverViewImage.map((src) => (
           <div key={src}>
