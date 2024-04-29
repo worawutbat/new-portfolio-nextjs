@@ -18,6 +18,8 @@ const storylogTech = ['GraphQL', 'Firebase', 'NextJs', 'NodeJS', 'Redux', 'Sass'
 const venueeTech = ['GraphQL', 'Firebase', 'NextJs', 'NodeJS', 'Redux', 'Sass', 'CSS3', 'React', 'HTML5', 'JavaScript', 'TypeScript', 'Styled-Component']
 const sobtidTech = ['Material UI', 'Redux', 'CSS3', 'NodeJS', 'React', 'HTML5', 'JavaScript', 'TypeScript']
 const nodeFrameTech = ['GraphQL', 'NodeJS', 'Redux', 'Sass', 'CSS3', 'Styled-Component', 'React', 'HTML5', 'JavaScript', 'TypeScript', 'Mongodb', 'Mongoose']
+const covidStack = ['HTML5', 'JavaScript', 'TypeScript', 'NodeJS', 'CSS3', 'TailwindCSS', 'Svelte']
+const firebaseTech = ['HTML5', 'JavaScript', 'TypeScript', 'NodeJS', 'CSS3', 'TailwindCSS', 'Firebase']
 
 const Work = () => {
   return (
@@ -25,7 +27,7 @@ const Work = () => {
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">my work</h1>
       <p className='my-6'>I am Frontend Software Engineer. I am actively seeking a role that provides meaningful and valuable challenges for me. Currently, I am exploring opportunities that align with my career goals. Below is a summary of my professional experience thus far.</p>
       <div>
-        <h2 className="font-medium text-xl mb-1 mt-8 tracking-tighter">Storylog</h2>
+        <h3 className="font-medium text-xl mb-1 mt-8 tracking-tighter">Storylog</h3>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-4">Frontend Software Engineer (Web Application) | 2020 - 2023</p>
         <p>I joined <a href="https://fictionlog.co/" className='underline'>Storylog</a> just before the onset of COVID-19. During my time there, I felt the strong dedication of my product team to delivering high-quality products and services to our users. This environment instilled in me the mindset and habit of consistently striving to create the best possible solutions and deliver top-notch code to serve our users effectively.</p>
         
@@ -47,11 +49,17 @@ const Work = () => {
         </ul>
 
         <div className="space-y-3">
-          {[...Object.values(image.feature.fictionlog), ...Object.values(image.feature.pinto)].map((src) => (
-            <div key={src}>
+          {[...Object.values(image.feature.fictionlog)].map((src) => (
+            <a key={src} href='https://fictionlog.co/' target='_blank'>
               <ThreeDCard src={src} />
-            </div>
+            </a>
           ))}
+          {[...Object.values(image.feature.pinto)].map((src) => (
+            <a key={src} href='https://pintobook.com/' target='_blank'>
+              <ThreeDCard src={src} />
+            </a>
+          ))}
+          
         </div>
 
         <section className='my-4'>
@@ -65,7 +73,7 @@ const Work = () => {
           </div>
         </section>
 
-        <h2 className="font-medium text-xl mb-1 mt-8 tracking-tighter">Venuee.co</h2>
+        <h3 className="font-medium text-xl mb-1 mt-8 tracking-tighter">Venuee.co</h3>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-4">Frontend Developer (Web Application) | 2019 - 2020</p>
         <p className='my-2'>Developed and improved web application of customer which used new stack technology such NextJS, Styled-Component, GraphQL</p>
         <ul className='ml-5 list-disc space-y-2'>      
@@ -77,9 +85,9 @@ const Work = () => {
 
         <div className="space-y-3">
           {[...Object.values(image.feature.venuee)].map((src) => (
-            <div key={src}>
+            <a key={src} href='https://www.venuee-performance.com/' target='_blank'>
               <ThreeDCard src={src} />
-            </div>
+            </a>
           ))}
         </div>
 
@@ -94,7 +102,7 @@ const Work = () => {
           </div>
         </section>
 
-        <h2 className="font-medium text-xl mb-1 mt-8 tracking-tighter">Sobtid Edutainment Co., Lt</h2>
+        <h3 className="font-medium text-xl mb-1 mt-8 tracking-tighter">Sobtid Edutainment Co., Lt</h3>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-4">Frontend Developer (Web Application) | 2018 - 2019</p>
         <p className='my-2'>Developed and maintained a front-end web application which used within the organization and maintain web UI that access by users (https://www.sobtid.me/).</p>
         <ul className='ml-5 list-disc space-y-2'>      
@@ -113,7 +121,7 @@ const Work = () => {
           </div>
         </section>
 
-        <h2 className="font-medium text-xl mb-1 mt-8 tracking-tighter">Nodeframe Solution Co., Ltd.</h2>
+        <h3 className="font-medium text-xl mb-1 mt-8 tracking-tighter">Nodeframe Solution Co., Ltd.</h3>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-4">Cooperative Education Student (Full Stack Developer) | Jun 2017 - Dec 2017</p>
         <p className='my-2'>Developed and improved web application of customer which used new stack technology such ReactJS, NodeJS, GraphQL and MongoDB</p>
         <ul className='ml-5 list-disc space-y-2'>   
@@ -141,6 +149,51 @@ const Work = () => {
         </section>
 
       </div>
+
+      <div>
+        <h2 className="font-medium text-xl mb-1 mt-8 tracking-tighter">Github POC and Contribute</h2>
+
+        <h3 className="font-medium text-xl mb-1 mt-8 tracking-tighter">Demo covid 19 daily</h3>
+        <p>This demo is about covid 19 data by show in daily chart. Why contribute this app, I would like to know covid 19 data in simple visual data.</p>
+        <a href='https://euphonious-bienenstitch-05020d.netlify.app/' target='_blank'> <ThreeDCard src={image.demo.covid} /></a>
+        <section className='my-4'>
+            Stack:
+          <div className='flex gap-1'>
+            {TechStack.filter(item => covidStack.includes(item.alt)).map(techItem => 
+              <a key={techItem.alt} href={techItem.href} target="_blank" rel="noreferrer">
+                <img src={techItem.src} width="36" height="36" alt={techItem.alt} />
+              </a>
+            )}
+          </div>
+        </section>
+
+        <h3 className="font-medium text-xl mb-1 mt-8 tracking-tighter">Demo firestore crud posts</h3>
+        <p>this demo is learing about firebase service such as</p>
+        <ul className='ml-5 list-disc space-y-2'>  
+          <li> auth service: i use gmail to auth in this web demo</li>
+          <li> firebase store realtime service: for CRUD post in this demo</li>
+          <li> other: i add a feature comment this is a emoji comment https://www.npmjs.com/package/emoji-picker-react</li>
+          <li> and other feature for additional in feture 🌟</li>
+        </ul>
+        <a href='https://firestore-crud-posts.vercel.app/' target='_blank'> <ThreeDCard src={image.demo.fireBasePost} /></a>
+        <section className='my-4'>
+            Stack:
+          <div className='flex gap-1'>
+            {TechStack.filter(item => firebaseTech.includes(item.alt)).map(techItem => 
+              <a key={techItem.alt} href={techItem.href} target="_blank" rel="noreferrer">
+                <img src={techItem.src} width="36" height="36" alt={techItem.alt} />
+              </a>
+            )}
+          </div>
+        </section>
+
+        <h3 className="font-medium text-xl mb-1 mt-8 tracking-tighter">Ratchagitja (Contribute)</h3>
+        <p>Contribute the website Ratchagitja about the laws announcement</p>
+        <a href='https://ratchagitja.vercel.app/entries/page/3' target='_blank'> <ThreeDCard src={image.demo.rachagitja} /></a>
+        <a href='https://github.com/withastro/astro' target='_blank'>https://github.com/withastro/astro</a>
+      </div>
+
+      <p className='my-6'>*Now I'm learning Golang and Jenkins 👨‍🏫</p>
     </section>
   )
 }

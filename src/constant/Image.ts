@@ -27,6 +27,12 @@ export const image = {
             home: '/feature/venuee-home.jpg'
         }
     },
+    demo: {
+        covid: '/demoGithub/covid.png',
+        fireBasePost: '/demoGithub/firebase-post.png',
+        rachagitja: '/demoGithub/rachagitja-2.png'
+    }
+    
     // logo: {
 
     // }

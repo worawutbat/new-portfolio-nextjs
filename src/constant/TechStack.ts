@@ -69,7 +69,7 @@ export const TechStack = [
 
     { href: 'https://www.mongodb.com/', src: '/logo/tech/mongodb-logo.png', alt: 'Mongodb' },
 
-    { href: ' https://mongoosejs.com/docs/', src: '/logo/tech/mongoose-logo.png', alt: 'Mongoose' },
+    { href: 'https://mongoosejs.com/docs/', src: '/logo/tech/mongoose-logo.png', alt: 'Mongoose' },
    
 ];
   

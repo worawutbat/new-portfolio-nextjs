@@ -11,6 +11,9 @@ const OverViewImage = [
   image.feature.venuee.home,
   image.feature.nodeFrame.hubba_1,
   image.feature.nodeFrame.hubba_3,
+  image.demo.covid,
+  image.demo.fireBasePost,
+  image.demo.rachagitja,
 ];
 
 export default function Home() {
