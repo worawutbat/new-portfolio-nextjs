@@ -74,7 +74,7 @@ const Blog = () => {
                   height="64"
                   className="h-16 w-16 rounded-full border border-neutral-200 dark:border-neutral-700"
                   sizes="33vw"
-                  src="/medium_logo.png"
+                  src="/logo/social/medium_logo.png"
                 />
                 <div className="relative -right-10 -top-6 inline-flex h-8 w-8 items-center rounded-full border border-neutral-200 bg-white p-1 dark:border-neutral-700">
                   <Image
@@ -117,7 +117,7 @@ const Blog = () => {
                   height="64"
                   className="h-16 w-16 rounded-full border border-neutral-200 dark:border-neutral-700"
                   sizes="33vw"
-                  src="/medium_logo.png"
+                  src="/logo/social/medium_logo.png"
                 />
                 <div className="relative -right-10 -top-6 inline-flex h-8 w-8 items-center rounded-full border border-neutral-200 bg-white p-1 dark:border-neutral-700">
                   <Image
