@@ -17,7 +17,7 @@ interface IPropsImageCardWithText {
 
 export default function ImageCardWithText({ src, title, subTitle, description, alt, href }: IPropsImageCardWithText) {
   return (
-    <Link key={src} href={href || '/'} target="_blank" rel="noreferrer">
+    <Link key={src} href={href || '/'} target="_blank" rel="noreferrer" title={alt}>
       <CardContainer className="">
         <CardBody>
           <CardItem translateZ="100" className="w-full mt-4">
