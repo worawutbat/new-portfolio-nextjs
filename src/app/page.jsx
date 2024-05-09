@@ -306,7 +306,7 @@ export default function Home() {
       <section className="my-6">
         <h3 className="font-medium text-2xl">My Work and Experience:</h3>
         {MY_WORKS_AND_EXPERIENCE.map((work) => (
-          <div className="border-b">
+          <div className="border-b" key={work.company}>
             <h3 className="font-medium text-xl mb-1 mt-8 tracking-tighter">{work.company}</h3>
             <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-4">{`${work.role} | ${work.period}`}</p>
             <p className="my-2">{work.responsibility}</p>
@@ -334,7 +334,7 @@ export default function Home() {
       <section className="my-6">
         <h3 className="font-medium text-2xl">My Projects and Contributes:</h3>
         {MY_PROJECTS.map((work) => (
-          <div className="border-b">
+          <div className="border-b" key={work.company}>
             <h3 className="font-medium text-xl mb-1 mt-8 tracking-tighter">{work.company}</h3>
             <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-4">{`${work.role} | ${work.period}`}</p>
             <p className="my-2">{work.responsibility}</p>
@@ -345,22 +345,22 @@ export default function Home() {
               ))}
             </div>
 
-            <section className="my-4">
+            <div className="my-4">
               Tech Stack:
               <div className="flex gap-1">
                 {work.techStack?.map((techItem) => (
-                  <Link key={techItem.alt} href={techItem.href} target="_blank" rel="noreferrer">
+                  <Link href={techItem.href} target="_blank" rel="noreferrer" key={`${work.company}-${techItem.alt}`}>
                     <Image src={techItem.src} width="36" height="36" alt={techItem.alt} />
                   </Link>
                 ))}
               </div>
-            </section>
+            </div>
           </div>
         ))}
       </section>
 
       <section className="my-6">
-        <h3 className="font-medium text-lg">Skills:</h3>
+        <h3 className="font-medium text-2xl">Skills:</h3>
         <div className="flex gap-1 flex-wrap">
           {TechStack.map((techItem) => (
             <a key={techItem.alt} href={techItem.href} target="_blank" rel="noreferrer">
@@ -371,7 +371,7 @@ export default function Home() {
       </section>
 
       <section className="space-y-4">
-        <h3 className="font-medium text-lg">Education:</h3>
+        <h3 className="font-medium text-2xl">Education:</h3>
         {EDUCATION_ITEMS.map((education) => (
           <ContactCard
             key={education.href}
