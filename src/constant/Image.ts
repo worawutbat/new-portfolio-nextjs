@@ -28,6 +28,38 @@ const image = {
     fireBasePost: '/demoGithub/firebase-post.png',
     rachagitja: '/demoGithub/rachagitja-2.png',
   },
+  logo: {
+    company: {
+      fictionlog: '/logo/company/fictionlog-logo.webp',
+      pinto: '/logo/company/pinto-logo.svg',
+      nodeframe: '/logo/company/nodeframe-logo.png',
+      sobtid1: '/logo/company/sobtid-1.png',
+      sobtid2: '/logo/company/sobtid-2.png',
+      sobtid3: '/logo/company/sobtid-3.webp',
+      venuee: '/logo/company/venuee-logo.jpg',
+    },
+    school: {
+      cru: '/logo/school/cru.png',
+      ku: '/logo/school/KU.png',
+    },
+    social: {
+      linkedin: '/logo/social/linkedin_logo.png',
+      medium: '/logo/social/medium_logo.png',
+    },
+    tech: {
+      cyprees: '/logo/tech/cypress.jpeg',
+      express: '/logo/tech/express-logo.png',
+      github: '/logo/tech/github_logo.png',
+      jest: '/logo/tech/jest-logo.png',
+      mongodb: '/logo/tech/mongodb-logo.png',
+      mongoose: '/logo/tech/mongoose-logo.png',
+      nextjs: '/logo/tech/next-logo.svg',
+      nextjs2: '/logo/tech/next.svg',
+      sc: '/logo/tech/sc-logo.png',
+      svelte: '/logo/tech/Svelte-logo.svg',
+      vercel: '/logo/tech/vercel.svg',
+    },
+  },
 };
 
 export default image;

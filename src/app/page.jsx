@@ -22,7 +22,7 @@ const HOME_CONTACTS = [
   {
     href: 'https://github.com/worawutbat/worawutbat/edit/main/README.md',
     title: '@worawutbat',
-    mainImageUrl: '/logo/tech/github_logo.png',
+    mainImageUrl: image.logo.tech.github,
     mainImageAlt: '@worawutbat',
     subImageUrl: '/profile.jpg',
     subImageAlt: '@github',
@@ -30,7 +30,7 @@ const HOME_CONTACTS = [
   {
     href: 'https://www.linkedin.com/in/worawut-tititumjariya-337400170/',
     title: '@linkedin-worawut',
-    mainImageUrl: '/logo/social/linkedin_logo.png',
+    mainImageUrl: image.logo.social.linkedin,
     mainImageAlt: '@linkedin',
     subImageUrl: '/profile.jpg',
     subImageAlt: '@github',
@@ -41,7 +41,7 @@ const EDUCATION_ITEMS = [
   {
     href: 'https://www.ku.ac.th/th',
     title: 'G.P.A. 3.27',
-    mainImageUrl: '/logo/school/KU.png',
+    mainImageUrl: image.logo.school.ku,
     mainImageAlt: '@Kasetsart University',
     header: 'Kasetsart University',
     subHeader: 'Bachelor of Science, Computer Science (2014 - 2018)',
@@ -49,7 +49,7 @@ const EDUCATION_ITEMS = [
   {
     href: 'https://www.cru.ac.th/',
     title: 'G.P.A. 3.49',
-    mainImageUrl: '/logo/school/cru.png',
+    mainImageUrl: image.logo.school.cru,
     mainImageAlt: '@CRU school',
     header: 'Chonradsadornumrung School',
     subHeader: 'High School , Scinece-Mathematic (2010 - 2013)',
