@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+import ContactCard from '~/component/ContactCard';
 import ThreeDCard from '~/component/ui/ThreeDCard';
 import image from '~/constant/Image';
 import TechStack from '~/constant/TechStack';
@@ -17,13 +18,51 @@ const OverViewImage = [
   image.demo.rachagitja,
 ];
 
+const HOME_CONTACTS = [
+  {
+    href: 'https://github.com/worawutbat/worawutbat/edit/main/README.md',
+    title: '@worawutbat',
+    mainImageUrl: '/logo/tech/github_logo.png',
+    mainImageAlt: '@worawutbat',
+    subImageUrl: '/profile.jpg',
+    subImageAlt: '@github',
+  },
+  {
+    href: 'https://www.linkedin.com/in/worawut-tititumjariya-337400170/',
+    title: '@linkedin-worawut',
+    mainImageUrl: '/logo/social/linkedin_logo.png',
+    mainImageAlt: '@linkedin',
+    subImageUrl: '/profile.jpg',
+    subImageAlt: '@github',
+  },
+];
+
+const EDUCATION_ITEMS = [
+  {
+    href: 'https://www.ku.ac.th/th',
+    title: 'G.P.A. 3.27',
+    mainImageUrl: '/logo/school/KU.png',
+    mainImageAlt: '@Kasetsart University',
+    header: 'Kasetsart University',
+    subHeader: 'Bachelor of Science, Computer Science (2014 - 2018)',
+  },
+  {
+    href: 'https://www.cru.ac.th/',
+    title: 'G.P.A. 3.49',
+    mainImageUrl: '/logo/school/cru.png',
+    mainImageAlt: '@CRU school',
+    header: 'Chonradsadornumrung School',
+    subHeader: 'High School , Scinece-Mathematic (2010 - 2013)',
+  },
+];
+
 export default function Home() {
   return (
     <section>
       <div className="flex items-start justify-start gap-2">
         <Image
           alt="@worawutbat"
-          fetchpriority="high"
+          fetchPriority="high"
           width="64"
           height="64"
           className="h-16 w-16 rounded-full border border-neutral-200 dark:border-neutral-700"
@@ -85,88 +124,17 @@ export default function Home() {
         .
       </p>
       <div className="my-8 flex w-full flex-col space-x-0 space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-        <div className="group flex w-full">
-          <a
-            href="https://github.com/worawutbat/worawutbat/edit/main/README.md"
-            target="_blank"
-            className="flex w-full items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800"
-            rel="noreferrer"
-          >
-            <div className="flex items-center space-x-3">
-              <div className="relative h-16">
-                <Image
-                  alt="@worawutbat"
-                  fetchpriority="high"
-                  width="64"
-                  height="64"
-                  className="h-16 w-16 rounded-full border border-neutral-200 dark:border-neutral-700"
-                  sizes="33vw"
-                  src="/logo/tech/github_logo.png"
-                />
-                <div className="relative -right-10 -top-6 inline-flex h-8 w-8 items-center rounded-full border border-neutral-200 bg-white p-1 dark:border-neutral-700">
-                  <Image
-                    alt="@github"
-                    fetchpriority="high"
-                    width="10"
-                    height="10"
-                    className="w-8 rounded-full border border-neutral-200 dark:border-neutral-700"
-                    sizes="33vw"
-                    src="/profile.jpg"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col">
-                <p className="font-medium text-neutral-900 dark:text-neutral-100">@worawutbat</p>
-              </div>
-            </div>
-            <div className="transform text-neutral-700 transition-transform duration-300 group-hover:-rotate-12 dark:text-neutral-300">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z" fill="currentColor" />
-              </svg>
-            </div>
-          </a>
-        </div>
-        <div className="group flex w-full">
-          <a
-            href="https://www.linkedin.com/in/worawut-tititumjariya-337400170/"
-            target="_blank"
-            className="flex w-full items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800"
-            rel="noreferrer"
-          >
-            <div className="flex items-center space-x-3">
-              <div className="relative h-16">
-                <Image
-                  alt="@linkedin"
-                  fetchpriority="high"
-                  width="64"
-                  height="64"
-                  className="h-16 w-16 rounded-full border border-neutral-200 dark:border-neutral-700"
-                  sizes="33vw"
-                  src="/logo/social/linkedin_logo.png"
-                />
-                <div className="relative -right-10 -top-6 inline-flex h-8 w-8 items-center rounded-full border border-neutral-200 bg-white p-1 dark:border-neutral-700">
-                  <Image
-                    alt="@github"
-                    fetchpriority="high"
-                    width="10"
-                    height="10"
-                    className="w-8 rounded-full border border-neutral-200 dark:border-neutral-700"
-                    sizes="33vw"
-                    src="/profile.jpg"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col">
-                <p className="font-medium text-neutral-900 dark:text-neutral-100">@linkedin-worawut</p>
-              </div>
-            </div>
-            <div className="transform text-neutral-700 transition-transform duration-300 group-hover:-rotate-12 dark:text-neutral-300">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z" fill="currentColor" />
-              </svg>
-            </div>
-          </a>
-        </div>
+        {HOME_CONTACTS.map((contact) => (
+          <ContactCard
+            key={contact.href}
+            href={contact.href}
+            title={contact.title}
+            mainImageUrl={contact.mainImageUrl}
+            mainImageAlt={contact.mainImageAlt}
+            subImageUrl={contact.subImageUrl}
+            subImageAlt={contact.subImageAlt}
+          />
+        ))}
       </div>
 
       <h3 className="font-medium text-lg">My work (Overview):</h3>
@@ -191,51 +159,17 @@ export default function Home() {
 
       <section className="space-y-4">
         <h3 className="font-medium text-lg">Education:</h3>
-        <div className="group flex w-full">
-          <div className="flex w-full items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-            <div className="flex items-center space-x-3">
-              <div className="relative h-16">
-                <Image
-                  alt="@worawutbat"
-                  fetchpriority="high"
-                  width="64"
-                  height="64"
-                  className="h-16 w-16 rounded-full border border-neutral-200 dark:border-neutral-700"
-                  sizes="33vw"
-                  src="/logo/school/KU.png"
-                />
-              </div>
-              <div className="flex flex-col">
-                <p className="font-semibold text-neutral-900 dark:text-neutral-100">Kasetsart University</p>
-                <p className="text-neutral-600 dark:text-neutral-400 text-sm">Bachelor of Science, Computer Science (2014 - 2018)</p>
-                <p>G.P.A. 3.27</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="group flex w-full">
-          <div className="flex w-full items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-            <div className="flex items-center space-x-3">
-              <div className="relative h-16">
-                <Image
-                  alt="@worawutbat"
-                  fetchpriority="high"
-                  width="64"
-                  height="64"
-                  className="h-16 w-16 rounded-full border border-neutral-200 dark:border-neutral-700"
-                  sizes="33vw"
-                  src="/logo/school/cru.png"
-                />
-              </div>
-              <div className="flex flex-col">
-                <p className="font-semibold text-neutral-900 dark:text-neutral-100">Chonradsadornumrung School</p>
-                <p className="text-neutral-600 dark:text-neutral-400 text-sm">High School , Scinece-Mathematic (2010 - 2013)</p>
-                <p>G.P.A. 3.49</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        {EDUCATION_ITEMS.map((education) => (
+          <ContactCard
+            key={education.href}
+            href={education.href}
+            title={education.title}
+            mainImageUrl={education.mainImageUrl}
+            mainImageAlt={education.mainImageAlt}
+            header={education.header}
+            subHeader={education.subHeader}
+          />
+        ))}
       </section>
     </section>
   );

@@ -42,7 +42,6 @@ function Blog() {
             >
               <div className="flex flex-col">
                 <p className="font-medium text-neutral-900 dark:text-neutral-100">{title}</p>
-                {/* <p className="text-neutral-600 dark:text-neutral-400">{comments}</p> */}
               </div>
               <div className="transform text-neutral-700 transition-transform duration-300 group-hover:-rotate-12 dark:text-neutral-300">
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +68,7 @@ function Blog() {
               <div className="relative h-16">
                 <Image
                   alt="@medium"
-                  // fetchpriority="high"
+                  fetchPriority="high"
                   width="64"
                   height="64"
                   className="h-16 w-16 rounded-full border border-neutral-200 dark:border-neutral-700"
@@ -79,7 +78,7 @@ function Blog() {
                 <div className="relative -right-10 -top-6 inline-flex h-8 w-8 items-center rounded-full border border-neutral-200 bg-white p-1 dark:border-neutral-700">
                   <Image
                     alt="@github"
-                    // fetchpriority="high"
+                    fetchPriority="high"
                     width="10"
                     height="10"
                     className="w-8 rounded-full border border-neutral-200 dark:border-neutral-700"
@@ -110,7 +109,7 @@ function Blog() {
               <div className="relative h-16">
                 <Image
                   alt="@worawuttititumjariya"
-                  // fetchpriority="high"
+                  fetchPriority="high"
                   width="64"
                   height="64"
                   className="h-16 w-16 rounded-full border border-neutral-200 dark:border-neutral-700"
@@ -120,7 +119,7 @@ function Blog() {
                 <div className="relative -right-10 -top-6 inline-flex h-8 w-8 items-center rounded-full border border-neutral-200 bg-white p-1 dark:border-neutral-700">
                   <Image
                     alt="@github"
-                    // fetchpriority="high"
+                    fetchPriority="high"
                     width="10"
                     height="10"
                     className="w-8 rounded-full border border-neutral-200 dark:border-neutral-700"
