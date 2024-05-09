@@ -1,14 +1,13 @@
 import classNames from 'classnames';
 import type { Metadata } from 'next';
 // eslint-disable-next-line camelcase
-import { Odibee_Sans } from 'next/font/google';
+import { Open_Sans } from 'next/font/google';
 
 import './globals.css';
 import NavLink from '~/component/NavLink';
 
-const sans = Odibee_Sans({
+const sans = Open_Sans({
   subsets: ['latin'],
-  weight: '400',
 });
 
 export const metadata: Metadata = {

@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
 import ThreeDCard from '~/component/ui/ThreeDCard';
-import { image } from '~/constant/Image';
-import { TechStack } from '~/constant/TechStack';
+import image from '~/constant/Image';
+import TechStack from '~/constant/TechStack';
 
 const OverViewImage = [
   image.feature.fictionlog.home,
