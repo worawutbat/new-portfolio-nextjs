@@ -1,14 +1,19 @@
-import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
-import "./globals.css";
-import NavLink from "~/component/NavLink";
-import classNames from "classnames";
+import classNames from 'classnames';
+import type { Metadata } from 'next';
+// eslint-disable-next-line camelcase
+import { Odibee_Sans } from 'next/font/google';
 
-const sans = Open_Sans({ subsets: ["latin"] });
+import './globals.css';
+import NavLink from '~/component/NavLink';
+
+const sans = Odibee_Sans({
+  subsets: ['latin'],
+  weight: '400',
+});
 
 export const metadata: Metadata = {
-  title: "Create Next App",
-  description: "Worawut Tititumjariy Portfolio",
+  title: 'Create Next App',
+  description: 'Worawut Tititumjariy Portfolio',
 };
 
 export default function RootLayout({

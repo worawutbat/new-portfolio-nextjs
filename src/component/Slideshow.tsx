@@ -1,19 +1,15 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from 'framer-motion';
+
 interface ISliceShow {
-    src: string
+  src: string;
 }
 
-const SliceShow = ({ src }: ISliceShow) => (
+function SliceShow({ src }: ISliceShow) {
+  return (
     <AnimatePresence>
-        <motion.img
-            key={src}
-            src={src}
-            initial={{ x: 300, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -300, opacity: 0 }}
-        />
+      <motion.img key={src} src={src} initial={{ x: 300, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -300, opacity: 0 }} />
     </AnimatePresence>
-)
+  );
+}
 
-
-export default SliceShow
+export default SliceShow;

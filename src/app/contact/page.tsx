@@ -1,26 +1,27 @@
-import React from 'react'
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
+import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Worawut Tititumjariy Portfolio",
+  title: 'Contact',
+  description: 'Worawut Tititumjariy Portfolio',
 };
 
-const contactList = [{
-  href:"mailto:woravootbat@gmail.com",
-  label: "📨: woravootbat@gmail.com"
-
-},{
-  href:"tel:080-4347241",
-  label: "📳: 080-434-7241"
-
-}]
-const Contact = () => {
+const contactList = [
+  {
+    href: 'mailto:woravootbat@gmail.com',
+    label: '📨: woravootbat@gmail.com',
+  },
+  {
+    href: 'tel:080-4347241',
+    label: '📳: 080-434-7241',
+  },
+];
+function Contact() {
   return (
-    <section className='space-y-4'>
+    <section className="space-y-4">
       <h2>Contact Info:</h2>
-      <div className='space-y-4'>
-        {contactList.map(({href, label}) => 
+      <div className="space-y-4">
+        {contactList.map(({ href, label }) => (
           <div className="group" title={label} key={label}>
             <a
               href={href}
@@ -34,15 +35,15 @@ const Contact = () => {
                   <path
                     d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
                     fill="currentColor"
-                  ></path>
+                  />
                 </svg>
               </div>
             </a>
-          </div>    
-        )}
+          </div>
+        ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default Contact
+export default Contact;
