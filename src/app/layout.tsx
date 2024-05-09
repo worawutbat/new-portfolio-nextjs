@@ -12,8 +12,11 @@ const sans = Odibee_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Create Next App',
+  title: 'Worawut Tititumjariy Portfolio',
   description: 'Worawut Tititumjariy Portfolio',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({

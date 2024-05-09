@@ -183,7 +183,7 @@ export default function Home() {
         <div className="flex gap-1 flex-wrap">
           {TechStack.map((techItem) => (
             <a key={techItem.alt} href={techItem.href} target="_blank" rel="noreferrer">
-              <img src={techItem.src} width="36" height="36" alt={techItem.alt} />
+              <Image src={techItem.src} width="36" height="36" alt={techItem.alt} />
             </a>
           ))}
         </div>
