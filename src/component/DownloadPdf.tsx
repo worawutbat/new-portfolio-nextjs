@@ -11,7 +11,7 @@ function DownloadPdf() {
         responseType: 'blob',
       });
       const blob = new Blob([response.data], { type: 'application/pdf' });
-      saveAs(blob, 'downloaded-example.pdf');
+      saveAs(blob, 'Worawut_Tititumjariya_CV.pdf');
     } catch (error) {
       console.error('Error downloading the PDF', error);
     }
