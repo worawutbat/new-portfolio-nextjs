@@ -24,6 +24,11 @@ const blogs = [
     // comments: "0 👏 0 💬"
   },
   {
+    href: 'https://medium.com/@worawuttititumjariya/%E0%B8%A5%E0%B8%AD%E0%B8%87-run-jenkins-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-docker-%E0%B8%9A%E0%B8%99-aws-40427405ffab',
+    title: '📖 ลอง Run Jenkins ด้วย Docker บน AWS',
+    // comments: "0 👏 0 💬"
+  },
+  {
     href: '',
     title: '✍️ Up comming...',
     // comments: "0 👏 0 💬"
@@ -38,6 +43,7 @@ function Blog() {
           <div className="group">
             <a
               href={href}
+              target="_blank"
               className="flex w-full items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800"
             >
               <div className="flex flex-col">
