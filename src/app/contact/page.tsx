@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import React from 'react';
 
+import DownloadPdf from '~/component/DownloadPdf';
+
 export const metadata: Metadata = {
   title: 'Contact',
   description: 'Worawut Tititumjariy Portfolio',
@@ -41,6 +43,7 @@ function Contact() {
             </a>
           </div>
         ))}
+        <DownloadPdf />
       </div>
     </section>
   );
